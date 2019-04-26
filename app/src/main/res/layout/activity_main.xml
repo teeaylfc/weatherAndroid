@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity"
+    android:background="@drawable/backgroud">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/txtSearch"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:hint="Nhập tên thành phố"
+            android:paddingLeft="5dp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnSearch"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="5dp"
+            android:background="#0097A7"
+            android:gravity="center"
+            android:text="OK"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtThanhPho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+
+        android:text="Thành phố : Hà Nội"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtQuocGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:text="Quốc gia : Việt Nam"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:weightSum="2">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_weight="1"
+        android:id="@+id/txtnhietdo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Nhietdo"
+        android:textColor="#FF0000"
+        android:textSize="40dp" />
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgIconMain"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/cloudsun"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+</android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtrangthai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Trạng thái"
+        android:textColor="#0E0E69"
+        android:textSize="29dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn24h"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/left" />
+    <TextView
+        android:id="@+id/datetime"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ngày tháng"
+        android:textSize="15sp" />
+        <Button
+            android:id="@+id/btnDaylater"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:paddingLeft="30dp"
+            android:background="@drawable/right"
+            />
+    </LinearLayout>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/humidity" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtDoam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Độ ẩm"
+                android:textSize="20dp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cloudicon" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtMay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Mây"
+                android:textSize="20dp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/wind" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtGio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Gió"
+                android:textSize="20dp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sunrise" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtMtMoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Mt Mọc"
+                android:textSize="20dp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sunset" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtMtLan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Mt Lặn"
+                android:textSize="20dp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/visibility" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtTamNhin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Tầm nhìn"
+                android:textSize="20dp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnmap"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:text="Bản đồ"
+        android:textColor="#000000"
+        android:background="@drawable/iconmap"
+        android:textSize="20dp" />
+</android.support.v7.widget.LinearLayoutCompat>

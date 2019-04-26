@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MyWeather</string>
+    <string-array name="countries">
+        <item>Hanoi</item>
+        <item>Saigon</item>
+        <item>Danang</item>
+        <item>Khanhhoa</item>
+        <item>Hue</item>
+        <item>Haiphong</item>
+        <item>Paris</item>
+        <item>London</item>
+        <item>Beijing</item>
+        <item>Washington</item>
+        <item>Newyork</item>
+        <item>Tokyo</item>
+        <item>Seul</item>
+        <item>Jakarta</item>
+        <item>Berlin</item>
+        <item>Liverpool</item>
+        <item>Manchester</item>
+        <item>Mexico</item>
+        <item>Monaco</item>
+        <item>Vientiane</item>
+
+
+    </string-array>
+</resources>

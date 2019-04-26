@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:gravity="center"
+    android:background="@drawable/backgr2">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txtDayList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày tháng"
+            android:textSize="30sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txtTrangThaiList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Trạng thái"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/imgIconList"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/rain" />
+
+        <TextView
+            android:id="@+id/txtMinList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="30C"
+            android:textColor="#187AD1"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/txtMaxList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="30C"
+            android:textColor="#FF0000"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
