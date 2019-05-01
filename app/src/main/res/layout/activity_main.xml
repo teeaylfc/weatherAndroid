@@ -23,9 +23,9 @@
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/btnSearch"
-            android:layout_width="70dp"
-            android:layout_height="35dp"
-            android:layout_marginLeft="0dp"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginBottom="5dp"
             android:background="#0097A7"
             android:gravity="center"

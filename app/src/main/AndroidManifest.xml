@@ -18,7 +18,14 @@
         <activity android:name=".activity.HourlyWeather"></activity>
         <activity android:name=".activity.DayLater" />
         <activity android:name=".activity.FlashActivity"/>
+        <activity android:name=".server.LoginActivity"/>
+        <activity android:name=".server.RegisterActivity"/>
+        <activity android:name=".server.DetailSchedule"/>
+        <activity android:name=".server.EditSchedule"/>
+        <activity android:name=".server.AddSchedule"/>
+        <activity android:name=".server.ScheduleActivity"/>
         <activity android:name=".activity.MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

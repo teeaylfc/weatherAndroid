@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/addSchedule"
+        android:title="Quản lí lịch"/>
+    <item android:id="@+id/viewHome"
+        android:title="Màn hình chính"/>
     <item android:id="@+id/gioithieu"
-        android:title="about"/>
+        android:title="Giới thiệu"/>
     <item android:id="@+id/help"
-        android:title="help"
+        android:title="Trợ giúp"
         />
-
+    <item android:id="@+id/logout"
+        android:title="Đăng xuất"/>
 </menu>

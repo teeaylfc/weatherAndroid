@@ -1,7 +1,9 @@
 package com.example.myapplication1.activity;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -26,6 +28,11 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.myapplication1.R;
+import com.example.myapplication1.model.Schedule;
+import com.example.myapplication1.server.AddSchedule;
+import com.example.myapplication1.server.LoginActivity;
+import com.example.myapplication1.server.ScheduleActivity;
+
 import android.net.NetworkInfo;
 
 import org.json.JSONArray;
@@ -114,6 +121,23 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.help:
                 break;
+            case R.id.addSchedule :
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                Intent intent2 = new Intent(MainActivity.this, ScheduleActivity.class);
+                SharedPreferences sharedPreferences=getSharedPreferences("idUser", Context.MODE_PRIVATE);
+                int id = sharedPreferences.getInt("id",0);;
+                if (id>0){
+                    startActivity(intent2);
+                    break;
+                }
+                startActivity(intent);
+                break;
+            case  R.id.viewHome:
+                break;
+            case R.id.logout:
+                SharedPreferences sharedPreferences1 =getSharedPreferences("idUser", Context.MODE_PRIVATE);
+                sharedPreferences1.edit().remove("id").commit();
+                break;
         }
         return true;
     }
@@ -134,12 +158,12 @@ public class MainActivity extends AppCompatActivity {
                     //Lấy trạng thái chung hiện tại
                     JSONArray jsonArrayWeather = jsonObject.getJSONArray("weather");
                     JSONObject jsonObjectWeather = jsonArrayWeather.getJSONObject(0);
-                   String trangthai = jsonObjectWeather.getString("main");
+                    String trangthai = jsonObjectWeather.getString("main");
                     txtTrangthai.setText(trangthai);
                     //Lấy nhiệt độ
                     JSONObject jsonObjectTemp = jsonObject.getJSONObject("main");
-                   String nhietdo = jsonObjectTemp.getString("temp");
-                   Double temp = Double.valueOf(nhietdo);
+                    String nhietdo = jsonObjectTemp.getString("temp");
+                    Double temp = Double.valueOf(nhietdo);
                     String nhietdoint = String.valueOf(temp.intValue());
                     txtNhietdo.setText("Hiện tại\n"+nhietdoint+"°C");
                     //Lấy độ ẩm
@@ -165,7 +189,8 @@ public class MainActivity extends AppCompatActivity {
                     //Lấy tầm nhìn
                     String tamnhin = jsonObject.getString("visibility");
                     txtTamNhin.setText(tamnhin+" m");
-                Sub();
+                    Sub();
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
